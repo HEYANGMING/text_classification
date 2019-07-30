@@ -57,11 +57,6 @@ print('中国：\n', model['中国'])
 print('少女与模特：\n', model.similarity('中国','模特'))
 print('与中国相似的词：\n', model.most_similar('中国'))
 
-# 下面代码是想把整个文件的词转换成向量，但有些问题，等弄好之后发你
-#with open('/home/heyangm/Desktop/分词及词向量/result/news_train.txt', 'r') as oread:
-    #tem = oread.read()
-#fvec.write(model[tem])
-
 fvec.close()
 ftrain.close()
 ftest.close()
